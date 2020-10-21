@@ -5,7 +5,7 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
-  background: url("../images/suns.jpg");
+  background: url("../images/milkbackground_3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -23,28 +23,32 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem; }
+  height: 32rem;
+  object-position: center;
+  /* Center the image within the element */
+  display: center; }
 
 .carousel-item > img {
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem; }
+  display: center;
+  max-width: 100%; }
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.marketing .col-lg-3 {
   margin-bottom: 1.5rem;
   text-align: center; }
 
 .marketing h2 {
   font-weight: 400; }
 
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem; }
+.marketing .col-lg-3 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem; }
+
+.bd-placeholder-img {
+  margin-bottom: 1.5rem; }
 
 /* Featurettes
 ------------------------- */

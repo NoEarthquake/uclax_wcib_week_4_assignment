@@ -1,21 +1,17 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
-  background: url("../images/suns.jpg");
+  background: url("../images/milkbackground_3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
@@ -25,55 +21,66 @@ body {
   bottom: 3rem;
   z-index: 10;
 }
-
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+  object-position: center;
+  /* Center the image within the element */
+  display: center;
 }
+
 .carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+  // object-fit: none; /* Do not scale the image */
+  // object-position: center; /* Center the image within the element */
+  // display: center;
+  // max-height: 500px;
+  position: absolute; //    top: 0;
+  //    left: 0;
+  //   min-width: 40%;
+  //  height: auto;
+  //   min-height: 100%;
+  //   width: auto;
+  display: center; //    margin:  auto;
+  max-width: 100%;
+  //   margin: auto;
+  // min-height: 100%;
+  // max-width:100%;
+  // min-width:100%;
 }
-
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
-
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.marketing .col-lg-3 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+
 .marketing h2 {
   font-weight: 400;
 }
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+
+.marketing .col-lg-3 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 
-
+.bd-placeholder-img {
+  margin-bottom: 1.5rem;
+}
 /* Featurettes
 ------------------------- */
-
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
 }
-
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
 }
-
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
   .carousel-caption p {
@@ -86,11 +93,9 @@ body {
     font-size: 50px;
   }
 }
-
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
   }
 }
-
 // Background image
