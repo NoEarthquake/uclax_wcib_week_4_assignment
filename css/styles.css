@@ -31,8 +31,7 @@ body {
 .carousel-item {
   height: 32rem;
   object-position: center;
-  /* Center the image within the element */
-  display: center; }
+  /* Center the image within the element */ }
 
 #myCarousel {
   height: 100%;
